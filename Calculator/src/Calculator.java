@@ -233,7 +233,7 @@ public class Calculator extends javax.swing.JFrame {
       System.exit(0);
     } else {
       System.out.println("User chose not to exit.");
-    }
+    }    
   }//GEN-LAST:event_btnExitActionPerformed
 
   private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
@@ -248,9 +248,9 @@ public class Calculator extends javax.swing.JFrame {
       System.out.println("User chose not to exit.");
     }
   }//GEN-LAST:event_formWindowClosed
-
+  
   public static void main(String args[]) {
-
+  
     java.awt.EventQueue.invokeLater(new Runnable() {
       public void run() {
         new Calculator().setVisible(true);
