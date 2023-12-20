@@ -362,13 +362,15 @@ public class bmi extends javax.swing.JFrame {
   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     DecimalFormat decimalFormat = new DecimalFormat("#.##");
     double height, weight, bmi_c, w_index ,weight_rate;
-    height = Integer.parseInt(txtHeight.getText());
-    weight = Integer.parseInt(txtWeight.getText());
+    
     
     if (txtAge.getText().trim().isEmpty() || txtHeight.getText().trim().isEmpty() || txtWeight.getText().trim().isEmpty()) {
       JOptionPane.showMessageDialog(null, "من فضلت املئ البيانات");
       
     }else {
+      
+      height = Integer.parseInt(txtHeight.getText());
+      weight = Integer.parseInt(txtWeight.getText());
       bmi_c = weight / (Math.pow((height / 100.0), 2));
       w_index = weight / (Math.pow((height / 100), 3));
 
