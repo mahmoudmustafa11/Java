@@ -1,4 +1,5 @@
 package sumofnumber;
+
 import java.util.Scanner;
 
 public class SumOfNumber {

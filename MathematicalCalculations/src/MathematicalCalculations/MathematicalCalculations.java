@@ -1,9 +1,10 @@
-package examples;
-public class Examples {
+package MathematicalCalculations;
+public class MathematicalCalculations {
     public static void main(String[] args) {
         // System.out.println(30/(12*2-9)+2^3);
         System.out.println(30/(12*2-9)+Math.pow(2,3));
         System.out.println("-----------------------------");
+        
         // Math Operatons
         int a = 22, b = 10;
         int x,y,z,v,u;

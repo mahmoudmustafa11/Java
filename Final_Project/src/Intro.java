@@ -15,6 +15,7 @@ public class Intro extends javax.swing.JFrame {
     calcBMR = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+    setTitle("حاسبة BMI و BMR");
     setBackground(new java.awt.Color(96, 231, 231));
     setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
     setResizable(false);
@@ -27,16 +28,19 @@ public class Intro extends javax.swing.JFrame {
       }
     });
 
-    calcBMI.setFont(new java.awt.Font("Calibri", 0, 48)); // NOI18N
-    calcBMI.setText("حاسبة مؤشر كتلة الجسم");
+    calcBMI.setFont(new java.awt.Font("Calibri", 1, 48)); // NOI18N
+    calcBMI.setText("حاسبة مؤشر كتلة الجسم BMI");
+    calcBMI.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     calcBMI.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         calcBMIActionPerformed(evt);
       }
     });
 
-    calcBMR.setFont(new java.awt.Font("Calibri", 0, 48)); // NOI18N
-    calcBMR.setText("حاسبة السعرات الحرارية");
+    calcBMR.setFont(new java.awt.Font("Calibri", 1, 48)); // NOI18N
+    calcBMR.setText("حاسبة السعرات الحرارية BMR");
+    calcBMR.setActionCommand("حاسبة السعرات الحرارية BMR");
+    calcBMR.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     calcBMR.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         calcBMRActionPerformed(evt);
@@ -48,20 +52,20 @@ public class Intro extends javax.swing.JFrame {
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
-        .addGap(82, 82, 82)
-        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-          .addComponent(calcBMR, javax.swing.GroupLayout.PREFERRED_SIZE, 504, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addComponent(calcBMI, javax.swing.GroupLayout.PREFERRED_SIZE, 504, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addContainerGap(90, Short.MAX_VALUE))
+        .addGap(50, 50, 50)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+          .addComponent(calcBMI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+          .addComponent(calcBMR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        .addContainerGap(65, Short.MAX_VALUE))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
-        .addGap(99, 99, 99)
+        .addGap(100, 100, 100)
         .addComponent(calcBMI, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
         .addComponent(calcBMR, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addGap(97, 97, 97))
+        .addGap(95, 95, 95))
     );
 
     setSize(new java.awt.Dimension(690, 550));
