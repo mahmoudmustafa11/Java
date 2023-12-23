@@ -53,6 +53,7 @@ public class bmi extends javax.swing.JFrame {
     buttonGroup1.add(jRadioButton2);
     jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
     jRadioButton2.setText(" انثي");
+    jRadioButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     jRadioButton2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     jRadioButton2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
@@ -63,6 +64,7 @@ public class bmi extends javax.swing.JFrame {
 
     btnClear.setFont(new java.awt.Font("Calibri", 1, 30)); // NOI18N
     btnClear.setText("جديد");
+    btnClear.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     btnClear.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
         btnClearMouseClicked(evt);
@@ -76,6 +78,7 @@ public class bmi extends javax.swing.JFrame {
 
     btnExit.setFont(new java.awt.Font("Calibri", 1, 30)); // NOI18N
     btnExit.setText("خروج");
+    btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
         btnExitMouseClicked(evt);
@@ -89,6 +92,7 @@ public class bmi extends javax.swing.JFrame {
 
     jButton1.setFont(new java.awt.Font("Calibri", 1, 30)); // NOI18N
     jButton1.setText("احسب");
+    jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     jButton1.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         jButton1ActionPerformed(evt);
@@ -118,6 +122,7 @@ public class bmi extends javax.swing.JFrame {
     jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
     jRadioButton1.setSelected(true);
     jRadioButton1.setText(" ذكر");
+    jRadioButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     jRadioButton1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     jRadioButton1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
@@ -365,7 +370,7 @@ public class bmi extends javax.swing.JFrame {
     
     
     if (txtAge.getText().trim().isEmpty() || txtHeight.getText().trim().isEmpty() || txtWeight.getText().trim().isEmpty()) {
-      JOptionPane.showMessageDialog(null, "من فضلت املئ البيانات");
+      JOptionPane.showMessageDialog(null, "من فضلت املئ البيانات", "تنبية", JOptionPane.WARNING_MESSAGE);
       
     }else {
       

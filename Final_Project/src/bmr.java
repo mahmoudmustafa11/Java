@@ -60,10 +60,12 @@ public class bmr extends javax.swing.JFrame {
     active.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
     active.setForeground(new java.awt.Color(51, 0, 51));
     active.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "خامل", "قليل النشاط", "نشط من حين لاخر", "نشط جدا", "نشط للغاية" }));
+    active.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
     jButton1.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
     jButton1.setForeground(new java.awt.Color(51, 0, 51));
     jButton1.setText("احسب");
+    jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
         jButton1MouseClicked(evt);
@@ -79,6 +81,7 @@ public class bmr extends javax.swing.JFrame {
     female.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
     female.setForeground(new java.awt.Color(51, 0, 51));
     female.setText("  انثي");
+    female.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     female.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     female.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
@@ -87,6 +90,7 @@ public class bmr extends javax.swing.JFrame {
     male.setForeground(new java.awt.Color(51, 0, 51));
     male.setSelected(true);
     male.setText("  ذكر");
+    male.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     male.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     male.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
@@ -102,6 +106,7 @@ public class bmr extends javax.swing.JFrame {
 
     listBMR.setFont(new java.awt.Font("Calibri", 1, 30)); // NOI18N
     listBMR.setText("قائمة السعرات الحرارية");
+    listBMR.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     listBMR.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
         listBMRMouseClicked(evt);
@@ -174,6 +179,7 @@ public class bmr extends javax.swing.JFrame {
 
     btnClear.setFont(new java.awt.Font("Calibri", 1, 30)); // NOI18N
     btnClear.setText("جديد");
+    btnClear.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     btnClear.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
         btnClearMouseClicked(evt);
@@ -182,6 +188,7 @@ public class bmr extends javax.swing.JFrame {
 
     btnExit.setFont(new java.awt.Font("Calibri", 1, 30)); // NOI18N
     btnExit.setText("خروج");
+    btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
         btnExitMouseClicked(evt);
@@ -296,7 +303,7 @@ public class bmr extends javax.swing.JFrame {
     double age, height, weight, result = 0;
 
     if (txtAge.getText().trim().isEmpty() || txtHeight.getText().trim().isEmpty() || txtWeight.getText().trim().isEmpty()) {
-      JOptionPane.showMessageDialog(null, "من فضلت املئ البيانات");
+      JOptionPane.showMessageDialog(null, "من فضلت املئ البيانات", "تنبية", JOptionPane.WARNING_MESSAGE);
     }else {
       age = Double.parseDouble(txtAge.getText());
       weight = Double.parseDouble(txtWeight.getText());

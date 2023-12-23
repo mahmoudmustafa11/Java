@@ -5,7 +5,6 @@ public class ZakatCalculator {
 
   public static void main(String[] args) {
     
-
         // Input the amount of money
         double amount = Double.parseDouble(JOptionPane.showInputDialog("Enter the amount of money in pounds: "));
 
